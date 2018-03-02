@@ -114,7 +114,7 @@ def test_overlap():
     """
     Test that the two Gaussian distro's from 4.1 and 4.3 overlap
     """
-    npt.assert_allclose(posterior.pdf(a),prilike/marg,.02)
+    npt.assert_allclose(posterior.pdf(a),prilike/marg,.01)
 
 
 test_trapz()
